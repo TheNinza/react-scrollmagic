@@ -1,3 +1,5 @@
+## A fork of react-scrollmagic to add support for React 18 and more.
+
 # react-scrollmagic
 
 > React components for ScrollMagic
@@ -21,8 +23,8 @@ npm install --save react-scrollmagic
 ## Usage
 
 ```jsx
-import React from 'react';
-import { Controller, Scene } from 'react-scrollmagic';
+import React from "react";
+import { Controller, Scene } from "react-scrollmagic";
 
 const App = () => (
   <div>
@@ -48,7 +50,7 @@ https://github.com/bitworking/react-scrollmagic/tree/master/example/src/componen
 These React components use http://scrollmagic.io/ internally. So for an in-depth documentation please visits following sites:
 
 http://scrollmagic.io/docs/ScrollMagic.Controller.html  
-http://scrollmagic.io/docs/ScrollMagic.Scene.html  
+http://scrollmagic.io/docs/ScrollMagic.Scene.html
 
 There are two components available:
 
@@ -56,13 +58,13 @@ There are two components available:
 
 Props:
 
-name | type | optional | default | more info
---- | --- | --- | --- | ---
-container | string or object | yes | window
-vertical | boolean | yes | true
-globalSceneOptions | object | yes | {} | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor)
-loglevel | number | yes | 2
-refreshInterval | number | yes | 100
+| name               | type             | optional | default | more info                                                             |
+| ------------------ | ---------------- | -------- | ------- | --------------------------------------------------------------------- |
+| container          | string or object | yes      | window  |
+| vertical           | boolean          | yes      | true    |
+| globalSceneOptions | object           | yes      | {}      | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor) |
+| loglevel           | number           | yes      | 2       |
+| refreshInterval    | number           | yes      | 100     |
 
 ## Scene
 
@@ -76,30 +78,29 @@ From version 2 on it also works with a [react-gsap](https://github.com/bitworkin
 
 Props:
 
-name | type | optional | default | more info
---- | --- | --- | --- | ---
-duration | number or string | yes | 0 | Can be changed on-the-fly
-offset | number or string | yes | 0 | Can be changed on-the-fly
-triggerElement | string, object or null | yes | child element
-triggerHook | number or string | yes | "onCenter" | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor) (Can be changed on-the-fly)
-reverse | boolean | yes | true | Can be changed on-the-fly
-loglevel | number | yes | 2
-indicators | boolean | yes | false | only boolean in contrast to plugin options: [link](http://scrollmagic.io/docs/debug.addIndicators.html#Scene.addIndicators)
-classToggle | string or string[2] | yes | undefined | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setClassToggle)
-pin | boolean or string | yes | undefined | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setPin)
-pinSettings | PinSettings | yes | undefined | See Types and [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setPin)
-enabled | boolean | yes | true | Can be changed on-the-fly
-progressEvents | boolean | yes | true | Ability to silence progress events reducing redraws
-  
+| name           | type                   | optional | default       | more info                                                                                                                   |
+| -------------- | ---------------------- | -------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| duration       | number or string       | yes      | 0             | Can be changed on-the-fly                                                                                                   |
+| offset         | number or string       | yes      | 0             | Can be changed on-the-fly                                                                                                   |
+| triggerElement | string, object or null | yes      | child element |
+| triggerHook    | number or string       | yes      | "onCenter"    | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor) (Can be changed on-the-fly)                           |
+| reverse        | boolean                | yes      | true          | Can be changed on-the-fly                                                                                                   |
+| loglevel       | number                 | yes      | 2             |
+| indicators     | boolean                | yes      | false         | only boolean in contrast to plugin options: [link](http://scrollmagic.io/docs/debug.addIndicators.html#Scene.addIndicators) |
+| classToggle    | string or string[2]    | yes      | undefined     | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setClassToggle)                                                    |
+| pin            | boolean or string      | yes      | undefined     | [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setPin)                                                            |
+| pinSettings    | PinSettings            | yes      | undefined     | See Types and [link](http://scrollmagic.io/docs/ScrollMagic.Scene.html#setPin)                                              |
+| enabled        | boolean                | yes      | true          | Can be changed on-the-fly                                                                                                   |
+| progressEvents | boolean                | yes      | true          | Ability to silence progress events reducing redraws                                                                         |
+
 ## Types
 
 ### PinSettings
 
-name | type | optional | default
---- | --- | --- | ---
-pushFollowers | boolean | yes | true
-spacerClass | string | yes | "scrollmagic-pin-spacer"
-
+| name          | type    | optional | default                  |
+| ------------- | ------- | -------- | ------------------------ |
+| pushFollowers | boolean | yes      | true                     |
+| spacerClass   | string  | yes      | "scrollmagic-pin-spacer" |
 
 This project was bootstrapped with:
 
