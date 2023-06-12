@@ -1,4 +1,4 @@
-declare module 'react-scrollmagic' {
+declare module '@theninza/react-scrollmagic' {
   import * as React from 'react';
 
   export type ControllerProps = {
